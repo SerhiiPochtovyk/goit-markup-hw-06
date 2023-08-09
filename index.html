@@ -454,14 +454,110 @@
         </div>
       </div>
     </footer>
-
-    <div class="backdrop is-hidden" data-modal>
+    <!-- is-hidden -->
+    <div class="backdrop" data-modal>
       <div class="modal-window">
         <button type="button" class="modal-window-close-btn" data-modal-close>
           <svg class="modal-window-close-btn-img" width="8" height="8">
             <use href="./images/icons.svg#iconclose-black"></use>
           </svg>
         </button>
+
+        <!-- ============form============== -->
+
+        <form class="rewiew-form">
+          <p class="rewiew-form-legend">
+            Leave your contacts and we will call you back
+          </p>
+
+          <label class="rewiew-form-field">
+            <p class="rewiew-form-field-description">Name<sup>*</sup></p>
+            <span class="review-form-input-wrapper">
+              <input
+                class="rewiew-form-input"
+                type="text"
+                name="user-name"
+                required
+              />
+              <svg class="input-form-icon" width="18" height="18">
+                <use href="./images/form-icon.svg#icon-person-1"></use>
+              </svg>
+            </span>
+          </label>
+
+          <label class="rewiew-form-field">
+            <p class="rewiew-form-field-description">Phone<sup>*</sup></p>
+            <span class="review-form-input-wrapper">
+              <input
+                class="rewiew-form-input"
+                type="text"
+                name="tel"
+                required
+              />
+              <svg
+                class="input-form-icon"
+                width="18"
+                height="24"
+                aria-label="user avatar icon"
+              >
+                <use href="./images/form-icon.svg#icon-phone-1"></use>
+              </svg>
+            </span>
+          </label>
+
+          <label class="rewiew-form-field">
+            <p class="rewiew-form-field-description">Email<sup>*</sup></p>
+            <span class="review-form-input-wrapper">
+              <input
+                class="rewiew-form-input"
+                type="text"
+                name="email"
+                required
+              />
+              <svg class="input-form-icon" width="18" height="24">
+                <use href="./images/form-icon.svg#icon-email-1"></use>
+              </svg>
+            </span>
+          </label>
+
+          <label class="review-form-field">
+            <p class="rewiew-form-field-description">Comment</p>
+            <textarea
+              class="review-form-message"
+              name="user_message"
+              placeholder="Enter text"
+            ></textarea>
+          </label>
+
+          <label class="review-form-field review-form-field-policy">
+            <input
+              class="rewiew-form-checkbox-policy"
+              type="checkbox"
+              name="user-policy"
+              required
+            />
+
+            <svg
+              class="review-form-own-checkbox"
+              width="16"
+              height="16"
+              aria-label="checkbox"
+            >
+              >
+              <use
+                class="review-form-own-checkbox-icon"
+                href="./images/form-icon.svg#icon-checkmark"
+              ></use>
+            </svg>
+            I accept the terms and conditions of the&nbsp;<a
+              class="accent-color link"
+              href=""
+              >Privacy Policy</a
+            >
+          </label>
+
+          <button class="review-form-submit-btn" type="button">Send</button>
+        </form>
       </div>
     </div>
     <script src="./js/modal.js"></script>

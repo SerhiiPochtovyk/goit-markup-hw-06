@@ -2,7 +2,7 @@
   --primary-color: #2e2f42;
   --secondary-color: #f4f4fd;
   --accent-color: #4d5ae5;
-  --text-color: #434455;
+  --text-color: #2e2f42;
   --hover-color: #404bbf;
   --white-color: #ffffff;
   --transition-duration: 250ms;
@@ -233,9 +233,7 @@ body {
   position: absolute;
   bottom: -1px;
   left: 0;
-
   display: block;
-  content: "";
   width: 100%;
   height: 4px;
   border-radius: 2px;
@@ -815,7 +813,7 @@ body {
 }
 
 /* ================ REVIEWS ================ */
-
+/* =================backdrop================== */
 .backdrop {
   position: fixed;
   top: 0;
@@ -833,10 +831,12 @@ body {
   pointer-events: none;
 }
 
+/* =============modal window============ */
 .modal-window {
   position: absolute;
   width: 408px;
   min-height: 584px;
+  padding: 72px 24px 24px 24px;
   transform: translate(-50%, -50%);
   top: 50%;
   left: 50%;
@@ -883,4 +883,170 @@ body {
 
 .modal-window-close-btn-img:hover {
   fill: #ffffff;
+}
+
+/* ======================modal backdrop end=============== */
+
+/* =================modal form===================== */
+
+.review-form {
+  width: 360px;
+}
+
+.rewiew-form-legend {
+  text-align: center;
+  width: 360px;
+  color: var(--navyblue, #2e2f42);
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 1.5em;
+  letter-spacing: 0.32px;
+  margin-bottom: 16px;
+}
+
+.rewiew-form-field-description {
+  color: #8e8f99;
+  font-size: 12px;
+  padding-bottom: 4px;
+  font-weight: 400;
+  line-height: 1.16em;
+  letter-spacing: 0.48px;
+}
+
+.review-form-input-wrapper {
+  position: relative;
+  display: block;
+}
+
+.rewiew-form-field {
+  display: block;
+  width: 360px;
+  height: 58px;
+  font-size: 100%;
+  padding-bottom: 8px;
+}
+
+.rewiew-form-input {
+  width: 100%;
+  height: 40px;
+  font-size: 18px;
+  padding-left: 38px;
+  border-radius: 4px;
+  border-color: transparent;
+  transition: border-color var(--transition-duration) var(--transition-func);
+  border: 1px solid rgba(46, 47, 66, 0.4);
+  outline-offset: 2px;
+}
+
+.review-form-input:focus {
+  border-radius: 4px;
+  border: 1px solid var(--iris, #4d5ae5);
+}
+
+.input-form-icon {
+  position: absolute;
+  top: 50%;
+  left: 16px;
+  transform: translateY(-50%);
+  transition: fill var(--transition-duration) var(--transition-func);
+  fill: var(--primary-color);
+}
+
+.review-form-input-wrapper:checked .review-form-input {
+  border-color: var(--accent-color);
+}
+
+.review-form-input-wrapper:focus-within .input-form-icon {
+  fill: var(--accent-color);
+}
+
+.review-form-message {
+  width: 100%;
+  height: 120px;
+  font-size: 18px;
+  resize: none;
+  padding: 8px 16px;
+  border-radius: 4px;
+  border: 1px solid var(--navyblue-modal, rgba(46, 47, 66, 0.4));
+  background-color: transparent;
+  color: #2e2f42;
+  transition: border-color var(--transition-duration);
+  transition: border-color var(--transition-func);
+  outline: transparent;
+}
+
+.review-form-message::placeholder {
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 1.16em;
+  letter-spacing: 0.48px;
+  color: var(--navyblue-modal, rgba(46, 47, 66, 0.4));
+}
+
+.review-form-message:focus {
+  outline-color: transparent;
+  outline-offset: 2px;
+  border-color: var(--accent-color);
+}
+
+/* ================checkbox================= */
+
+.rewiew-form-checkbox-policy {
+  position: absolute;
+  appearance: none;
+}
+
+.rewiew-form-checkbox-policy:checked + .review-form-own-checkbox {
+  border-color: var(--accent-color);
+  background-color: var(--accent-color);
+}
+
+.review-form-own-checkbox {
+  width: 16px;
+  height: 16px;
+  margin-right: 8px;
+  stroke-width: 1px;
+  stroke: var(--navyblue-modal, rgba(46, 47, 66, 0.4));
+  cursor: pointer;
+}
+
+.review-form-own-checkbox-icon {
+  display: none;
+}
+
+.rewiew-form-checkbox-policy:checked + .review-form-own-checkbox use {
+  display: block;
+}
+
+.review-form-field-policy {
+  display: flex;
+  align-items: center;
+  width: 338px;
+  flex-shrink: 0;
+  color: var(--lightslate, #8e8f99);
+  font-size: 12px;
+  line-height: 1.16em;
+}
+
+.review-form-submit-btn {
+  display: block;
+  min-width: 169px;
+  height: 56px;
+  padding: 16px 32px;
+  margin-top: 24px;
+  margin-left: 96px;
+  font-family: inherit;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  border-radius: 4px;
+  background-color: #4d5ae5;
+  color: #ffffff;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+  transition-duration: var(--transition-duration);
+  transition-property: background-color;
+  transition-timing-function: var(--transition-func);
+  border: none;
 }
