@@ -625,19 +625,6 @@ body {
   color: var(--white, #ffffff);
 }
 
-/* .footer-link {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: #4d5ae5;
-  
-  }
-
-.footer-link:hover,
-.footer-link:focus {
- background-color: #31d0aa;
-   }  */
-
 /* ===============portfolio================== */
 
 /* header  */
@@ -923,8 +910,6 @@ body {
   position: relative;
   display: block;
 }
-
-
 
 .review-form-input {
   width: 100%;
