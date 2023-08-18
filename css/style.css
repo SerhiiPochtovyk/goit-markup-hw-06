@@ -1,59 +1,7 @@
-:root {
-  --primary-color: #2e2f42;
-  --secondary-color: #f4f4fd;
-  --accent-color: #4d5ae5;
-  --text-color: #2e2f42;
-  --text-color-footer-form: var(--white-color);
-  --hover-color: #404bbf;
-  --white-color: #ffffff;
-  --transition-duration: 250ms;
-  --transition-func: cubic-bezier(0.4, 0, 0.2, 1);
-  --transition-dur-and-func: 250ms linear;
-}
+
 
 /* none */
-h1,
-h2,
-h3,
-h4,
-p {
-  margin: 0;
-  padding: 0;
-}
 
-ul,
-ol {
-  margin: 0;
-  padding: 0;
-}
-
-img {
-  display: block;
-  max-width: 100%;
-  height: auto;
-}
-
-button {
-  cursor: pointer;
-  border: none;
-}
-
-figure {
-  margin: auto;
-}
-
-.list {
-  list-style: none;
-}
-
-.link {
-  text-decoration: none;
-  font-style: normal;
-}
-
-.img-clean {
-  display: block;
-}
 
 .overlay-wrapper {
   position: relative;
@@ -89,23 +37,9 @@ figure {
 
 /* ==========body============== */
 
-body {
-  font-family: "Roboto", sans-serif;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 1.5;
-  letter-spacing: 0.02em;
-  color: #434455;
-  background-color: var(--white-color);
-}
 
-.container {
-  width: 1158px;
-  padding-left: 15px;
-  padding-right: 15px;
-  margin-left: auto;
-  margin-right: auto;
-}
+
+
 
 /* hidden title  */
 
@@ -125,7 +59,7 @@ body {
 
 /* main page -  header  */
 
-.header {
+/* .header {
   display: flex;
   position: relative;
   justify-content: space-between;
@@ -181,11 +115,11 @@ body {
 
 .address-item:last-child {
   margin-right: 0px;
-}
+} */
 
-/* logo */
+/* ===================logo================= */
 
-.logo {
+/* .logo {
   display: flex;
   align-items: center;
   padding-top: 24px;
@@ -255,7 +189,7 @@ body {
 
 .address-link:hover {
   color: var(--hover-color);
-}
+} */
 
 /* section first */
 
@@ -894,13 +828,7 @@ body {
 
 /* ================ REVIEWS ================ */
 
-.margbt {
-  margin-bottom: 24px;
-}
 
-.margb {
-  margin-bottom: 16px;
-}
 
 /* =================backdrop================== */
 .backdrop {
@@ -914,11 +842,7 @@ body {
     visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.is-hidden {
-  opacity: 0;
-  visibility: hidden;
-  pointer-events: none;
-}
+
 
 /* =============modal window============ */
 .modal-window {
