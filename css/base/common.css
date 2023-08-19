@@ -1,10 +1,21 @@
+body {
+  font-family: var(--primary-font);
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: var(--body-text-slate);
+  background-color: var(--header-team-card-background);
+}
+
 h1,
 h2,
 h3,
 h4,
+h5,
+h6,
 p {
   margin: 0;
-  padding: 0;
 }
 
 ul,
@@ -19,13 +30,14 @@ img {
   height: auto;
 }
 
+
 button {
   cursor: pointer;
   border: none;
 }
 
-figure {
-  margin: auto;
+.text-centr {
+  text-align: center;
 }
 
 .list {
@@ -37,33 +49,35 @@ figure {
   font-style: normal;
 }
 
-.img-clean {
-  display: block;
+.margbt {
+  margin-bottom: 24px;
 }
 
-body {
-    font-family: "Roboto", sans-serif;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 1.5;
-    letter-spacing: 0.02em;
-    color: #434455;
-    background-color: var(--white-color);
-  }
+.margb {
+  margin-bottom: 16px;
+}
 
-  /* ================ REVIEWS ================ */
+.subtitile {
+  margin-bottom: 72px;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.11;
+  text-align: center;
+  letter-spacing: 0.02em;
+  text-transform: capitalize;
+  color: var(--dark-overlays-shadows-headings);
+}
 
-.margbt {
-    margin-bottom: 24px;
-  }
-  
-  .margb {
-    margin-bottom: 16px;
-  }
-  /* ===================== */
-  .is-hidden {
-    opacity: 0;
-    visibility: hidden;
-    pointer-events: none;
-  }
-  
+.hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}

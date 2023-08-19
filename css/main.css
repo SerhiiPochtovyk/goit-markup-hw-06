@@ -2,12 +2,24 @@
 
 @import './utils/variables.css';
 
-/* BASE STAYLS */
+/* BASE StYLES */
 
 @import './base/common.css';
 @import './base/container.css';
 @import './base/section.css';
 
+/* COMPONENTS */
+
+@import './components/index-hero.css';
+@import './components/index-studio.css';
+ @import './components/index-production.css';     
+@import './components/index-workers.css';
+@import './components/index-costumers.css';
+@import './components/portfolio-hero.css';
+
 /* LAYOUT */
 
 @import './layout/header.css';
+@import './layout/modal-menu.css';
+@import './layout/footer.css';
+@import './layout/modal-menu-order.css';
