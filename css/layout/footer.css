@@ -75,7 +75,7 @@
     width: 100%;
   }
   .label-input {
-    width: 264px;
+    width: 398px;
     height: 40px;
     border: 1px solid var(--header-team-card-background);
     background-color: transparent;
@@ -129,6 +129,14 @@
     .margb {
       margin-bottom: 8px;
     }
+.menu-link {
+  display: flex;
+  flex-direction: column;
+  margin-top: 16px;
+  margin-bottom: 16px;
+  gap: 12px;
+}
+
   }
   
   @media screen and (min-width: 1158px) {
@@ -194,4 +202,6 @@
       text-align: center;
       text-transform: capitalize;
     }
+
+    
   }

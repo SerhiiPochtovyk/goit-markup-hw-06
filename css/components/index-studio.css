@@ -1,6 +1,10 @@
-.advantage-list {
+.advantage {
   padding: 96px 16px;
-  display: block;
+}
+
+.advantage-list {
+    display: block;
+    
 }
 
 .advantage-item {

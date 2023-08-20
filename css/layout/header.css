@@ -104,8 +104,6 @@
   }
 
   .header-link-padding {
-    padding-top: 4px;
-    padding-bottom: 4px;
     transition: color var(--timing-duration) var(--timing-function);
     font-size: 12px;
     line-height: 1.17;
